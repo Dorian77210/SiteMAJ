@@ -1,0 +1,125 @@
+/*effet sur le titre*/
+.slideEffect{
+	color: #fff;
+	text-align: center;
+}
+
+#divSlideEffect{
+	min-height: 60px;
+}
+
+/*presentation du site*/
+#corpsPresentation{
+	display: flex;
+	position: relative;
+	margin-top: 5%;
+	justify-content: space-around;
+	background-color: #d4d6d7;
+	padding: 1% 0%;
+}
+
+#corpsPresentation div{
+	width: 30%;
+}
+
+#corpsPresentation h4{
+	text-align: center;
+}
+/*partie images*/
+#corpsPresentation img{
+	width: 15%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 5%;
+	transition: 0.7s;
+}
+
+#corpsPresentation img:hover{
+	width: 20%;
+}
+
+/*paragraphes*/
+#corpsPresentation div p{
+	width: 50%;
+	padding-top: 3%;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	font-size: 80%;
+	border-top: 1px solid #000;
+}
+
+/*block au milieu*/
+#corpsPresentation div:nth-child(2){
+	border-right: 2px solid black;
+	border-right-style: dotted;
+	border-right-width: 2px;
+	border-left: 2px solid black;
+	border-left-style: dotted;
+	border-left-width: 2px;
+}
+
+/*carte de fontainebleau*/
+#map{
+    display: block;
+    width: 100%;
+    padding-bottom: 1%;
+    background-color: #363632;
+}
+#map p{
+    color: white;
+    font-size: 80%;
+    padding: 1%;
+    text-align: center;
+}
+#map iframe{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 280px;
+}
+
+/*contenu*/
+#content div{
+	background-color: #d4d6d7;
+}
+
+#content div h3{
+	text-align: center;
+	font-size: 100%;
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 2.5% 0%;
+	border: 1px solid black;
+	font-family: 'Patua One', cursive;
+}
+
+#content div p{
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	font-family: 'Oswald', sans-serif;
+}
+
+/*liens dans les paragraphes*/
+#content a{
+	color: #8fda13;
+	text-decoration: none;
+	transition: 0.7s;
+}
+
+#content a:hover{
+	color: orange;
+}
+/*ouverture de paragraphes*/
+.openParagraphe{
+	font-size: 120%;
+	float: right;
+	cursor: pointer;
+	min-height: 50px;
+}

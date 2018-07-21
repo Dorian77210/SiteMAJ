@@ -1,0 +1,196 @@
+/*tous les uls*/
+html{
+	 background-image: linear-gradient(to bottom, #000000, #110006, #1a000f, #1f0017, #23011f);
+}
+
+/*gestion du menu de navigation*/
+#menu{
+	background: #0F0F0A;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	z-index: 3;
+	opacity: 0.8;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+#menu, #menu ul{
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+}
+#menu-mobile{
+	display: none;
+	color: white;
+}
+#menu ul{
+	position: relative;
+}
+#menu a{
+	color: white;
+	padding: 10% 0%;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	width: 125px;
+	background-color: #0F0F0A;
+	transition: 0.7s;
+}
+
+#menu a:hover{
+	background-color: #ff3333;
+}
+
+#menu li{
+	position: relative;
+	list-style: none;
+	width: 150px;
+	display: inline-block;
+	text-align: center;
+}
+#menu ul ul{
+	top: auto;
+	position: absolute;
+	display: none;
+}
+#menu li ul a{
+	width: 150px;
+	display: block;
+}
+
+
+#menu li ul ul{
+	top: 0px;
+	left: 150px;
+}
+
+#menu ul ul li:not(:last-child) a{
+	border-bottom: 1px solid #fff;
+}
+
+#menu ul ul ul li:first-child a{
+	border-top: 1px solid #fff;
+}
+#menu ul ul ul li:last-child a{
+	border-bottom: 0px;
+}
+
+/*menu mobile*/
+@media (max-width: 850px){
+	
+	#menu-mobile{
+		display: block;
+		padding: 5% 0%;
+	}
+
+	#menu ul ul{
+		display: none;
+	}
+
+	#menu > ul{
+		display: none;
+		width: 100%;
+	}
+
+	#menu > ul li{	
+		display: block;
+		width: 100%;
+	}
+
+	#menu > ul li:not(:last-child) a{
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #aaa;
+	}
+
+	#menu a{
+		padding: 5% 0%;
+	}
+
+}
+/*on gere le cas du lien actif*/
+.active{
+	background: #0E552B;
+}
+
+/*footer*/
+footer{
+	background: #0F0F0A;
+	position: relative;
+}
+
+#under_footer{
+	border-top: 5px solid white;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: space-around;
+}
+#under_footer h5{
+	color: white;
+	text-align: center;
+}
+#under_footer li{
+	list-style: square;
+}
+#under_footer a{
+	text-decoration: none;
+	color: #c64829;
+	transition: 0.5s;
+}
+#under_footer div{
+	display: block;
+	width: 33%;
+	padding-top: 0;
+}
+
+#under_footer a:focus,
+#under_footer a:hover{
+	color: orange;
+}
+/*icone de contact*/
+#imgContact{
+	position: fixed;
+	bottom: 0;
+	left: -250px;
+	width: auto;
+}
+
+#imgContact img{
+	width: 50px;
+	transition: 0.7s;
+}
+
+#imgContact img:hover{
+	width: 62px;
+}
+
+#canDisplay{
+	width: 50px;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+}
+#canDisplay:hover{
+	cursor: pointer;
+}
+
+
+/*corps principal de la page*/
+article{
+	margin-top: 10%;
+}
+
+/*bouton pour remonter en haut*/
+#haut{
+	width: 3%;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+}
