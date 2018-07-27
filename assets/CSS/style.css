@@ -82,39 +82,6 @@ html, body{
 	border-bottom: 0px;
 }
 
-/*menu mobile*/
-@media (max-width: 850px){
-	
-	#menu-mobile{
-		display: block;
-		padding: 5% 0%;
-	}
-
-	#menu ul ul{
-		display: none;
-	}
-
-	#menu > ul{
-		display: none;
-		width: 100%;
-	}
-
-	#menu > ul li{	
-		display: block;
-		width: 100%;
-	}
-
-	#menu > ul li:not(:last-child) a{
-		display: block;
-		width: 100%;
-		border-bottom: 1px solid #aaa;
-	}
-
-	#menu a{
-		padding: 5% 0%;
-	}
-
-}
 /*on gere le cas du lien actif*/
 #active{
 	background: #0E552B;
@@ -236,6 +203,34 @@ article{
 
 @media screen and (max-width: 900px){
 
+	#menu-mobile{
+		display: block;
+		padding: 5% 0%;
+	}
+
+	#menu ul ul{
+		display: none;
+	}
+
+	#menu > ul{
+		display: none;
+		width: 100%;
+	}
+
+	#menu > ul li{	
+		display: block;
+		width: 100%;
+	}
+
+	#menu > ul li:not(:last-child) a{
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #aaa;
+	}
+
+	#menu a{
+		padding: 5% 0%;
+	}
 	#canDisplay{
 		width: 30px;
 		height: auto;
