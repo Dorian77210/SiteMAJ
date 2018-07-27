@@ -234,7 +234,7 @@ article{
 	cursor: pointer;
 }
 
-@media (max-width: 900px){
+@media screen and (max-width: 900px){
 
 	#canDisplay{
 		width: 30px;
