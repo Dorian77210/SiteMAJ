@@ -2,7 +2,10 @@
 html{
 	 background-image: linear-gradient(to bottom, #000000, #110006, #1a000f, #1f0017, #23011f);
 }
-
+html, body{
+	margin: 0;
+	padding: 0;
+}
 /*gestion du menu de navigation*/
 #menu{
 	background: #0F0F0A;
@@ -34,10 +37,13 @@ html{
 	text-decoration: none;
 	text-align: center;
 	width: 125px;
-	background-color: #0F0F0A;
+    font-family: 'Lateef', cursive;
+    font-size: 140%;
 	transition: 0.7s;
 }
-
+#menu ul ul a{
+	background-color: #0F0F0A;
+}
 #menu a:hover{
 	background-color: #ff3333;
 }
@@ -110,19 +116,38 @@ html{
 
 }
 /*on gere le cas du lien actif*/
-.active{
+#active{
 	background: #0E552B;
 }
 
 /*footer*/
 footer{
 	background: #0F0F0A;
-	position: relative;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 1%;
+}
+
+footer li, footer a{
+	font-family: 'Oswald', sans-serif;
+}
+footer img{
+	width: 4%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	transition: 0.7s;
+}
+
+footer img:hover{
+	width: 5%;
 }
 
 #under_footer{
 	border-top: 5px solid white;
-	width: 80%;
+	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
@@ -130,12 +155,19 @@ footer{
 }
 #under_footer h5{
 	color: white;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 80%;
 }
 #under_footer li{
 	list-style: square;
+	text-align: center;
 }
 #under_footer a{
+	text-align: center;
 	text-decoration: none;
 	color: #c64829;
 	transition: 0.5s;
@@ -150,11 +182,15 @@ footer{
 #under_footer a:hover{
 	color: orange;
 }
+
+#mesInfos li span{
+	color: #fff;
+}
 /*icone de contact*/
 #imgContact{
 	position: fixed;
 	bottom: 0;
-	left: -250px;
+	left: -300px;
 	width: auto;
 }
 
@@ -173,6 +209,9 @@ footer{
 	z-index: 1;
 	bottom: 0;
 	left: 0;
+}
+#creation{
+	font-size: 80%;
 }
 #canDisplay:hover{
 	cursor: pointer;
@@ -193,4 +232,46 @@ article{
 	right: 0;
 	z-index: 2;
 	cursor: pointer;
+}
+
+@media (max-width: 900px){
+
+	#canDisplay{
+		width: 30px;
+		height: auto;
+	}
+
+	#imgContact img{
+		width: 30px;
+		height: auto;
+	}
+
+	#haut{
+		width: 30px;
+		height: auto;
+	}
+
+	#under_footer{
+		display: block;
+	}
+
+	#under_footer div{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#under_footer div li{
+		text-align: center;
+		list-style: none;
+	}
+
+	footer img{
+		display: none;
+	}
+
+	article{
+		margin-top: 20%;
+	}
 }

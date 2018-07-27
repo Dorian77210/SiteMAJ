@@ -1,0 +1,39 @@
+article img{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: auto;
+}
+article i{
+	display: block;
+	padding-top: 2.5%;
+	color: #fff;
+	font-size: 85%;
+}
+
+@media (max-width: 900px){
+
+	article{
+		margin-top: 20%;
+	}
+	article img{
+		width: 100%;
+	}
+}
+@media print{
+
+	*, #menu-mobile, #haut, title, head{
+		display: none;
+	}
+
+	article, html, body{
+		display: block;
+	}
+
+	article img{
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		width: auto;
+	}
+}

@@ -1,0 +1,153 @@
+/*corps de la page*/
+article{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+article i{
+	display: block;
+	padding-bottom: 2%;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	text-align: center;
+	font-size: 80%;
+}
+
+#form{
+	background: #1A2223;
+	margin-right: auto;
+	margin-left: auto;
+	width: 65%;
+}
+/*corps principal*/
+#account,#statut,#checkout,#sexe,#message{
+	padding-left: 5%;
+	padding-bottom: 3%;
+
+}
+.div{/*bordure sous chaque bloc*/
+	border-bottom: 1px solid white;
+}
+
+#account div,#checkout div,#message div,#statut div{
+	padding-bottom: 3%;
+}
+#account input,#checkout .text,#message input{
+	width: 92%;
+	height: 30px;
+	background: #000000;
+	border: 1px solid #000;
+}
+#civilite{
+	display: flex;
+	justify-content: space-between;
+}
+#sexe label,#statut label{
+	color: white;
+	font-size: 80%;
+}
+
+input{
+	color: white;
+}
+textarea{
+	color: white;
+	background: #000;
+	resize: none;
+	width: 92%;
+	border: 1px solid #000;
+	margin-top: 3.5%;
+}
+/*partie boutons radios*/
+input[type=radio]{
+    display: none;
+}
+/* Affichage par défaut du bouton radio personnalisé */
+input[type=radio] + label:before {
+    background: #000;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    margin-top: -3px;
+    margin-right: 6px;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    width: 17px;
+    height: 17px;
+}
+/* Affichage du bouton radio personnalisé quand il est sélectionné */
+input[type=radio]:checked + label:before {
+    background: #fb8819;
+    border-color: #fb8819;
+    box-shadow: inset 0px 0px 0px 2px #fff;
+}
+
+/*boutons*/
+
+#submit{
+	padding-top: 5%;
+	display: flex;
+	justify-content: space-around;
+}
+#submit input{
+	background: #000;
+	color: white;
+	border: 1px solid #000;
+	height: 35px;
+	transition: color .4s;
+	border-radius: 10%;
+}
+#submit input:hover, #submit input:focus{
+	color: orange;
+	cursor: pointer;
+}
+
+legend{
+	padding-top: 2%;
+	padding-bottom: 3.5%;
+	color: white;
+	padding-left: 5%;
+	font-weight: none;
+	font-size: 95%;
+	font-family: 'Oswald', sans-serif;
+}
+article h5{
+	color: white;
+	font-weight: normal;
+	font-size: 100%;
+	text-decoration: none;
+	padding-left: 5%;
+	font-family: 'Patua One', cursive;
+}
+::placeholder{
+	color: #625520;
+	opacity: 0.8;
+}
+
+/*etoiles*/
+.rating {
+   direction: rtl;
+   text-align: center;
+}
+.rating a {
+   color: #aaa;
+   text-decoration: none;
+   font-size: 200%;
+   transition: color .4s;
+}
+
+@media screen and (max-width: 900px){
+
+	article{
+		width: 85%;
+	}
+	#form{
+		width: 100%;
+	}
+	article p{
+		width: auto;
+		font-size: 80%;
+		text-align: justify;
+	}
+}

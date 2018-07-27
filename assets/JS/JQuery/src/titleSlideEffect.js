@@ -4,6 +4,7 @@ $(document).ready(function(){
 				 'Site professionnel', 
 				 'Dorian Terbah', 
 				 'Tous droits réservés',
+				 'Développement web',
 				 'Write less, do more'
 				];
 	let indexTable = 0;

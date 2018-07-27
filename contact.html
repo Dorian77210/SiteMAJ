@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" type="text/css" href="./assets/CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="./assets/CSS/contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Patua+One|Bree+Serif|Cabin+Condensed|Lateef|Arbutus+Slabcd" rel="stylesheet">
+ 
+
+	<script type="text/javascript" src="./assets/JS/JQuery/libs/jquery.js"></script>
+	<script type="text/javascript" src="./assets/JS/JQuery/src/menu.js"></script>
+	<script type="text/javascript" src="./assets/JS/JQuery/src/contactSlide.js"></script>
+	<script type="text/javascript" src="./assets/JS/JQuery/src/scroll.js"></script>
+	<script type="text/javascript" src="./assets/JS/JQuery/src/scrollHome.js"></script>
+</head>
+<body>
+	<!--menu de navigation !-->
+	<nav id="menu">
+		
+		<label id="menu-mobile">Menu</label>
+		<ul>
+
+			<li><a href="index.html">Accueil</a></li>
+			<li><a href="cv.html">CV</a></li>
+			<li><a href="realisations.html">Réalisations</a>
+
+				<ul id="realisations">
+
+					<li><a href="realisations.html#C">C</a>
+
+						<ul>
+							<li><a href="realisations.html#Taquin">Taquin</a></li>
+						</ul>
+					</li>
+					<li><a href="realisations.html#Python">Python</a>
+
+						<ul>
+							<li><a href="realisations.html#Militaires">Militaire</a></li>
+							<li><a href="realisations.html#Avions">Avions</a></li>
+							<li><a href="realisations.html#Mario">Mario labyrinthe</a></li>
+						</ul>
+
+					</li>
+					<li><a href="realisations.html#Java">Java</a>
+
+						<ul>
+							<li><a href="realisations.html#Demineur">Démineur</a></li>
+						</ul>
+					</li>
+					<li><a href="realisations.html#JS">Javascript</a>
+
+						<ul>
+							
+							<li><a href="realisations.html#Bubbles">Bubbles</a></li>
+							<li><a href="realisations.html#Revelation">Images</a></li>
+							<li><a href="realisations.html#Car">Car Ricer</a></li>
+							<li><a href="realisations.html#Triangle">Triangle de Sierpiński</a></li>
+							<li><a href="realisations.html#Ship">Ship</a></li>
+
+						</ul>
+					</li>
+					<li><a href="realisations.html#Web">Web</a>
+
+						<ul>
+							
+							<li><a href="realisations.html#SitePersonnel">Site personnel</a></li>
+							<li><a href="realisations.html#Stropoles">Stropole</a></li>
+							<li><a href="realisations.html#Reseau">Mini réseau social</a></li>
+						</ul>
+
+					</li>
+				</ul>	
+
+			</li>
+			<li><a href="">Tutoriels</a>
+
+				<ul>
+
+					<li><a href="">Python</a>
+
+						<ul>
+							
+							<li><a href="">Pygame</a></li>
+							<li><a href="">Python natif</a></li>
+
+						</ul>
+
+
+					</li>
+
+					<li><a href="">Java</a>
+
+						<ul>
+						
+							<li><a href="">Java natif</a></li>
+
+						</ul>
+					</li>
+
+					<li><a href="">PHP</a>
+
+						<ul>
+							<li><a href="">Codeigniter</a></li>
+							<li><a href="">PHP natif</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</li>
+			<li><a href="galerie.html">Galerie images</a></li>
+			<li><a href="contact.html" id="active">Contact</a></li>
+
+		</ul>
+	</nav>
+
+	<!--icones de contact !-->
+	<img src="./assets/Images/Others/Contact/flecheDroite.png" alt="" id="canDisplay">
+	<div id="imgContact">
+		<a href="https://dwarves.iut-fbleau.fr/git"><img src="./assets/Images/Others/Contact/gitgogs.png" alt=""></a>
+		<a href="mailto:dorian.terbah@etu.u-pec.fr"><img src="./assets/Images/Others/Contact/outlook.png" alt=""></a>
+		<a href="mailto:dorian.terb@gmail.com"><img src="./assets/Images/Others/Contact/gmail.png" alt=""></a>
+		<a href="https://github.com/"><img src="./assets/Images/Others/Contact/github.png" alt=""></a>
+	</div>	
+
+	<!--bouton pour remonter en haut!-->
+	<img src="./assets/Images/Others/Scroll/haut.png" alt="" id="haut">
+	<article>
+				<i>Vous pouvez me contacter par le biais de ce formulaire, je vous répondrai dans les plus brefs délais. Les champs dans lesquels figurent une étoile sont obligatoires.</i>
+			<div id="form">
+				<form method="GET" action="contact.php">
+					<legend>INFO PROFESSIONNELLES</legend>
+					<div class="div">
+						<div id="account">
+							<div><input type="email" name="email" placeholder="example@domaine*" required autofocus></div>
+							<div><input type="text" name="webite" placeholder="Site internet"></div>
+						</div>	
+					</div>
+					<legend>IDENTITE</legend>
+					<div class="div">
+						<div id="checkout">
+							<div><input text="text" name="prenom" placeholder="Prénom*" class="text" required  ></div>
+							<div><input type="text" name="nom" placeholder="Nom*" class="text" required  ></div>
+							<div><input type="tel" name="telephone" placeholder="06/07..." class ="text" ></div>
+						</div>
+
+						<h5>Civilité</h5>
+						<div id="sexe">
+							<input type="radio" name="sexe" checked id="b1" value="Femme"><label for="b1">Femme</label>
+							<input type="radio" name="sexe" id="b2" value="Homme"><label for="b2">Homme</label>
+							<input type="radio" name="sexe" id="b3" value="Autre"><label for="b3">Autre</label>
+						</div>
+						<h5>Vous êtes ?</h5>
+						<div id="statut">
+							<input type="radio" name="statut" checked id="b4" value="Professionnel(le)"><label for="b4">Professionnel</label>
+							<input type="radio" name="statut" id="b5" value="Particulier"><label for="b5">Particulier</label>
+							<input type="radio" name="statut" id="b6" value="Autre"><label for="b6">Autre</label>
+						</div>
+					</div>
+					<legend>MESSAGE</legend>
+					<div class="div">
+						<div id="message">
+							<input type="text" name="objet" placeholder="Objet*" required>
+							<textarea name="message" placeholder="Message...*" required rows="8"></textarea>
+						</div>
+					</div>
+
+					<div id="submit">
+						<input type="submit" value="Envoyer">
+						<input type="reset" name="reset" value="Annuler">
+					</div>
+			<br><br><br><br>
+
+				</form>
+			</div>
+	</article>
+<br/><br/><br/>
+<br/><br/><br/>
+<br/><br/><br/>
+	<footer>
+
+		<div id="under_footer">
+
+			<div id="contact">
+				<h5>Me retrouver sur : </h5>
+				<ul>
+					<li><a href="https://www.instagram.com/">Sur instagram</a></li>
+					<li><a href="https://www.facebook.com/" >Sur facebook</a></li>
+					<li><a href="http://dwarves.iut-fbleau.fr/~terbah/">Mon site personnel</a></li>
+				</ul>
+			</div>
+			<div id="mesInfos">
+
+				<h5>Informations</h5>
+				<ul>
+					<li><span>Mail : dorian.terb@gmail.com</span></li>
+					<li><span>Adresse : 1/3 avenue du général de Gaulle Avon 77210</span></li>
+					<li><span>Tél : 06.26.43.69.14</span></li>
+				</ul>
+			</div>
+			<div id="me_contacter">
+
+				<h5>Un avis ? Un conseil ? Une recommendation ? <br/>Un problème ? Contactez-moi ! </h5>
+				<ul>
+					<li><a href="mailto:dorian.terb@gmail.com">Par mail</a></li>
+					<li><a href="http://dwarves.iut-fbleau.fr/~terbah/contact.html">Depuis mon site</a></li>
+				</ul>
+			</div>
+
+						
+		</div>
+
+		<a href="http://www.iutsf.u-pec.fr/accueil-fr/accueil-iut-senart-fontainebleau-805692.kjsp"><img src="./assets/Images/Others/Contact/iut.jpg" alt=""></a>
+		<center><p style="color: white;">Pensé et créé par Dorian Terbah - Année 2018 - Tous droits réservés</p></center>
+	</footer>
+</body>
+</html>

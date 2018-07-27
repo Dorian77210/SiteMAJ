@@ -1,0 +1,147 @@
+/*corps principal de la page*/
+article{
+	background-color: #fff;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2% 2%;
+}
+article p{
+	padding-right: 5%;
+	padding-left: 5%;
+	width: 85%;
+	font-size: 85%;
+    font-family: 'Slabo 27px', serif;
+}
+
+.text span{
+	font-family: 'Oswald', sans-serif;
+	font-style: italic;
+}
+article img{
+	width: 30%;
+	height: auto;
+	padding-bottom: 3%;
+}
+article a{
+	color: #8fda13;
+	text-decoration: none;
+	transition: 0.7s;
+}
+
+article a:hover{
+	color: orange;
+}
+article h5{
+    font-style: 85%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+	padding: 2.5% 0%;
+	border-left: 1px solid black;
+	border-left-style: dotted;
+	border-left-width: 1px solid black;
+	border-right: 1px solid black;
+	border-right-style: dotted;
+	border-right-width: 1px solid black;
+	border-bottom: 1px solid black;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px solid black;
+	border-top: 1px solid black;
+	border-top-style: dotted;
+	border-top-width: 1px solid black;
+	font-family: 'Patua One', cursive;
+}
+article h4{
+	text-align: center;
+	color: #2377EF;
+	font-size: 75%;
+}
+
+article h3{
+	font-size: 85%;
+    font-family: 'Bree Serif', serif;
+	font-weight: none;
+	color: #2377EF;
+	text-align: left;
+	border-bottom: 1px solid #2377EF;
+	width: 90%;
+}
+
+
+/*blocs contenant les images*/
+.toOpen{
+	display: none;
+}
+
+.container-slides{
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	position: relative;
+}
+
+.container-slides img{
+	width: 400px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	height: auto;
+}
+
+.prev, .next{
+	position: absolute;
+	cursor: pointer;
+	top: 50%;
+	color: #000;
+	font-size: 30px;
+	transition: 0.7s;
+	border-radius: 3px 0 0 3px;
+	width: auto;
+}
+
+.prev{
+	left: 0;
+}
+
+.next{
+	right: 0;
+}
+
+.text{
+	position: absolute;
+	top: 70%;
+	left: 5%;
+	color: red;
+	font-size: 75%;
+}
+
+.openDiv{
+	font-size: 120%;
+	float: right;
+	cursor: pointer;
+}
+
+@media (max-width: 900px){
+
+	article{
+		width: 100%;
+	}
+
+	article h5{
+		width: 85%;
+		font-size: 85%;
+	}
+
+	article p{
+		font-size: 75%;
+	}
+	.container-slides img{
+		width: 150px;
+	}
+
+	.prev, .next{
+		font-size: 15px;
+	}
+}

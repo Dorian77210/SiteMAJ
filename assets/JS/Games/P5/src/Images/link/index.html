@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script type="text/javascript" src="./../../../libs/p5.min.js"></script>
+	<script type="text/javascript" src="./../code/sketch.js"></script>
+	<title>Image</title>
+</head>
+	<style>
+		input{
+			margin-left: 16%;
+			display: block;
+		}
+		#div{
+			display: grid;
+  			grid-template-columns: repeat(3, 1fr);
+	  		grid-gap: 10px;
+ 			 grid-auto-rows: minmax(100px, auto);
+ 			 width: 50%;
+ 			 float: right;
+		}
+		img{
+			width: 40%;
+		}
+		h4{
+			float: right;
+		}
+		canvas{
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+		}
+		p{
+			width: 100%;
+		}
+	</style>
+<body>
+	<br/>
+	<input type="button" value="Load random image" onclick="changePictureRandom()"/>
+	<div>
+	<div id="div">
+	<div id="0"><img src="./../images/photo0.png" onclick="changePictureChoose(0)"/></div>	
+	<div id="1"><img src="./../images/photo1.png" onclick="changePictureChoose(1)"/></div>	
+	<div id="2"><img src="./../images/photo2.png" onclick="changePictureChoose(2)"/></div>	
+	<div id="3"><img src="./../images/photo3.png" onclick="changePictureChoose(3)"/></div>	
+	<div id="4"><img src="./../images/photo4.png" onclick="changePictureChoose(4)"/></div>	
+	<div id="5"><img src="./../images/photo5.png" onclick="changePictureChoose(5)"/></div>	
+	<div id="6"><img src="./../images/photo6.png" onclick="changePictureChoose(6)"/></div>	
+	<div id="7"><img src="./../images/photo7.png" onclick="changePictureChoose(7)"/></div>	
+	<div id="8"><img src="./../images/photo8.png" onclick="changePictureChoose(8)"/></div>	
+	<p>You can change the image on clicking on one of the images.</p>
+	</div>
+
+</body>
+</html>
