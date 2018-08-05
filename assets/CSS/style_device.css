@@ -1,6 +1,6 @@
 	#menu-mobile{
 		display: block;
-		padding: 5% 0%;
+		padding: 3.5% 0%;
 	}
 
 	#menu ul ul{
@@ -17,14 +17,14 @@
 		width: 100%;
 	}
 
-	#menu > ul li:not(:last-child) a{
+	#menu > ul li a{
 		display: block;
 		width: 100%;
-		border-bottom: 1px solid #aaa;
+		border-top: 1px solid #aaa;
 	}
 
 	#menu a{
-		padding: 5% 0%;
+		padding: 2% 0%;
 	}
 	#canDisplay{
 		width: 30px;

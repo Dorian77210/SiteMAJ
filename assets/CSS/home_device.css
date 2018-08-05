@@ -1,3 +1,7 @@
 #content div h3, #content div p{
+	width: 90%;
+}
+
+#map iframe{
 	width: 95%;
 }
