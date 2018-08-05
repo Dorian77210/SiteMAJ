@@ -187,6 +187,7 @@
 }
 #languages img{
 	width: 10%;
+	min-width: 100px;
 	height: auto;
 	transition: 0.7s;
 }

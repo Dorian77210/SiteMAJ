@@ -10,7 +10,9 @@ $(document).ready(function(){
 		$('#' + div + ' p').fadeToggle(speed); //effet du paragraphe
 		
 
-		$(this).text(arrow);
+		$(this).fadeOut(speed / 2, function(){
+			$(this).fadeIn(speed / 2).text(arrow);
+		});
 
 	});
 });
