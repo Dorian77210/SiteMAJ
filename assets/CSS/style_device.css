@@ -1,0 +1,66 @@
+	#menu-mobile{
+		display: block;
+		padding: 5% 0%;
+	}
+
+	#menu ul ul{
+		display: none;
+	}
+
+	#menu > ul{
+		display: none;
+		width: 100%;
+	}
+
+	#menu > ul li{	
+		display: block;
+		width: 100%;
+	}
+
+	#menu > ul li:not(:last-child) a{
+		display: block;
+		width: 100%;
+		border-bottom: 1px solid #aaa;
+	}
+
+	#menu a{
+		padding: 5% 0%;
+	}
+	#canDisplay{
+		width: 30px;
+		height: auto;
+	}
+
+	#imgContact img{
+		width: 30px;
+		height: auto;
+	}
+
+	#haut{
+		width: 30px;
+		height: auto;
+	}
+
+	#under_footer{
+		display: block;
+	}
+
+	#under_footer div{
+		display: block;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#under_footer div li{
+		text-align: center;
+		list-style: none;
+	}
+
+	footer img{
+		display: none;
+	}
+
+	article{
+		margin-top: 20%;
+	}
