@@ -1,0 +1,11 @@
+article{
+	width: 85%;
+}
+#form{
+	width: 100%;
+}
+article p{
+	width: auto;
+	font-size: 80%;
+	text-align: justify;
+}

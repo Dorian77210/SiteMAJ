@@ -122,26 +122,3 @@ article h3{
 	float: right;
 	cursor: pointer;
 }
-
-@media (max-width: 900px){
-
-	article{
-		width: 100%;
-	}
-
-	article h5{
-		width: 85%;
-		font-size: 85%;
-	}
-
-	article p{
-		font-size: 75%;
-	}
-	.container-slides img{
-		width: 150px;
-	}
-
-	.prev, .next{
-		font-size: 15px;
-	}
-}

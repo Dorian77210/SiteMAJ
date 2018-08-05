@@ -136,18 +136,3 @@ article h5{
    font-size: 200%;
    transition: color .4s;
 }
-
-@media screen and (max-width: 900px){
-
-	article{
-		width: 85%;
-	}
-	#form{
-		width: 100%;
-	}
-	article p{
-		width: auto;
-		font-size: 80%;
-		text-align: justify;
-	}
-}
