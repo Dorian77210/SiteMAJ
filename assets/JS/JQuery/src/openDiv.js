@@ -7,7 +7,7 @@ $(document).ready(function(){
 		if($(this).text() === arrow) arrow = '➡️';
 		var span = $(this);
 		var div = $(this).parent('h5').parent('div').attr('id');
-		$('#' + div + ' .toOpen').slideToggle(speed); //effet du paragraphe
+		$('#' + div + ' .toOpen').fadeToggle(speed); //effet du paragraphe
 		$(this).fadeOut(speed / 2, function(){
 
 			$(this).fadeIn(speed / 2).text(arrow);
