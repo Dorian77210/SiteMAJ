@@ -1,6 +1,6 @@
 	#menu-mobile{
 		display: block;
-		font-size: 14px;
+		font-size: 30px;
 		padding: 5% 0%;
 	}
 
@@ -26,7 +26,7 @@
 
 	#menu a{
 		padding: 5% 0%;
-		font-size: 20px;
+		font-size: 30px;
 	}
 	#canDisplay{
 		width: 30px;
