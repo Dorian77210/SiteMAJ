@@ -1,0 +1,51 @@
+body, html{
+	padding: 0;
+}
+
+body{
+	background-color: #9fbd13;
+}
+
+#message{
+	position: relative;
+	top: -100px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 40%;
+	background-color: blue;
+	border: 1px solid blue;
+	border-radius: 10px;
+}
+
+#message p{
+	text-align: center;
+	color: #fff;
+}
+
+/*spinner*/
+@keyframes spinner-line-fade-more {
+  0%, 100% {
+    opacity: 0; /* minimum opacity */
+  }
+  1% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-fade-quick {
+  0%, 39%, 100% {
+    opacity: 0.25; /* minimum opacity */
+  }
+  40% {
+    opacity: 1;
+  }
+}
+
+@keyframes spinner-line-fade-default {
+  0%, 100% {
+    opacity: 0.22; /* minimum opacity */
+  }
+  1% {
+    opacity: 1;
+  }
+}

@@ -13,7 +13,7 @@ $(document).ready(function(){
 		var title = $('.slideEffect');
 		title.slideUp(1000, function() {
 			$(this).text(texts[indexTable % texts.length]).slideDown(1000);
-		});
+		}).css('font-size', '75%');
 		indexTable++;
 	} , 4500);
 });
