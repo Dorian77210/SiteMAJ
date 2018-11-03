@@ -5,6 +5,8 @@ article{
 	margin-left: auto;
 	margin-right: auto;
 	padding: 2% 2%;
+	border: 1px solid black;
+	border-radius: 10px;
 }
 article p{
 	padding-right: 5%;
@@ -73,6 +75,13 @@ article h3{
 /*blocs contenant les images*/
 .toOpen{
 	display: none;
+}
+
+.active-container {
+	background-color: gray;
+}
+.container {
+	cursor: pointer;
 }
 
 .container-slides{

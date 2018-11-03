@@ -124,17 +124,23 @@ footer img:hover{
 	color: white;
 	display: block;
 	margin-right: auto;
+	padding: 0;
 	margin-left: auto;
 	text-align: center;
     font-family: 'Bree Serif', serif;
     font-size: 80%;
 }
 #under_footer li{
-	list-style: square;
+	list-style: none;
 	text-align: center;
+	padding: 0px;
+	margin: 0px;
 }
+
 #under_footer a{
 	text-align: center;
+	padding: 0;
+	margin: 0;
 	text-decoration: none;
 	color: #c64829;
 	transition: 0.5s;
@@ -142,7 +148,8 @@ footer img:hover{
 #under_footer div{
 	display: block;
 	width: 33%;
-	padding-top: 0;
+	padding: 0;
+	margin: 0;
 }
 
 #under_footer a:focus,
