@@ -24,25 +24,25 @@ let index = 1;
 let length = images.length;
 let speed = 1000;
 let stopSlideShow = false;
+let diapo = null;
 
-function startSlideShow(){
+function changePicture(){
 
 	var image = $('.container-slides img');
-		var textIndication = $('.container-slides i');
-		image.fadeOut(speed, function(){
-
-			$(this).attr('src', images[index % length]).fadeIn(speed);
-			index++;
+	var textIndication = $('.container-slides i');
+	image.fadeOut(speed, function(){
+		$(this).attr('src', images[index % length]).fadeIn(speed);
+		index++;
 	});
 
-		textIndication.fadeOut(speed, function(){
-			$(this).fadeIn(speed).text('Photo n°' + (index % (length + 1)));
+	textIndication.fadeOut(speed, function(){
+		$(this).fadeIn(speed).text('Photo n°' + (index % (length + 1)));
 	});
 
 	var dot;
 	for(var i = 0; i < length; i++){
-		if(i != (index % length)) $('#dot' + i).css('background-color', '#bbb');
-		else $('#dot' + i).css('background-color', 'red');
+		var background = ( ( i != ( index % length ) ) ) ? '#bbb' : 'red';
+		$('#dot' + i).css( 'background-color', background );
 	}
 }		
 
@@ -51,8 +51,15 @@ $(document).ready(function(){
 	//ajout des dots
 	for(var i = 0; i < images.length; i++){
 		$('#allDot').append('<span class="dot" id="dot' + i +  '"></span>');
+		/*$('#dot' + i).on('click', function() {
+			var id = $(this).attr('id');
+			index = id.substr(3, id.length);
+			clearInterval( diapo ); //stop the slide show to display the future picture
+			changePicture();
+			setInterval( changePicture, speed * 4 ); //reload the slide show
+		});*/
 	}
-	var diapo = setInterval(startSlideShow ,speed * 4);
+	diapo = setInterval(changePicture ,speed * 4);
 
 	//ajout du stop du diapo
 	$('.container-slides button').on('click', function(){
@@ -63,7 +70,7 @@ $(document).ready(function(){
 			$('button').text('Relancer le diapo');
 		}
 		else{
-			diapo = setInterval(startSlideShow, speed * 4);
+			diapo = setInterval(changePicture, speed * 4);
 			$('button').text('Stoper le diapo');
 		}
 	});
