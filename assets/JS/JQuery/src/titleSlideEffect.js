@@ -1,10 +1,9 @@
 $(document).ready(function(){
 
-	var texts = ['Etudiant en première année de DUT informatique',
+	var texts = ['Etudiant en deuxième année de DUT informatique en alternance à l\'INSEAD',
 				 'Site professionnel', 
 				 'Dorian Terbah', 
 				 'Tous droits réservés',
-				 'Développement web',
 				 'Write less, do more'
 				];
 	let indexTable = 0;
