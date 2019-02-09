@@ -25,7 +25,7 @@ article img{
 	height: auto;
 	padding-bottom: 3%;
 }
-article a{
+article a {
 	color: #8fda13;
 	text-decoration: none;
 	transition: 0.7s;
@@ -71,6 +71,13 @@ article h3{
 	width: 90%;
 }
 
+.code-source {
+	font-style: italic;
+}
+
+.code-source a {
+	color: blue;
+}
 
 /*blocs contenant les images*/
 .toOpen{

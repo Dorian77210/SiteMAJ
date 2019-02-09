@@ -43,6 +43,34 @@ var allUrlsImages = {
 				"./assets/Images/Tools/Games/Java/Demineur/demineur4.png"
 			],
 			'actualIndex' 		: 		0
+		},
+		'KahmateGame'	 	: 		{
+			'images'			: 			[
+				"./assets/Images/Tools/Games/Java/Kahmate/home.png",
+				"./assets/Images/Tools/Games/Java/Kahmate/debut.png",
+				"./assets/Images/Tools/Games/Java/Kahmate/jeu1.png",
+				"./assets/Images/Tools/Games/Java/Kahmate/jeu2.png",
+			],
+			'actualIndex' 		: 		0
+		},
+		'ChessGame' 		: 		{
+			'images' 			: 			[
+				"./assets/Images/Tools/Games/Java/Chess-Game/debut.png",
+				"./assets/Images/Tools/Games/Java/Chess-Game/jeu1.png",
+				"./assets/Images/Tools/Games/Java/Chess-Game/log.png",
+				"./assets/Images/Tools/Games/Java/Chess-Game/save.png"
+
+			],
+			'actualIndex' 		: 		0
+		},
+		'Fractales' 		: 		{
+			'images' 			: 			[
+				"./assets/Images/Tools/Games/Java/Fractales/spirale1.png",
+				"./assets/Images/Tools/Games/Java/Fractales/spirale2.png",
+				"./assets/Images/Tools/Games/Java/Fractales/flower.png",
+				"./assets/Images/Tools/Games/Java/Fractales/snow.png"
+			],
+			'actualIndex' 		: 		0
 		}
 
 };
