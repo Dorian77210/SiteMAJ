@@ -16,3 +16,7 @@ article p{
 .prev, .next{
 	font-size: 15px;
 }
+
+.toOpen {
+	display: block;
+}

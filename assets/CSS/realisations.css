@@ -80,9 +80,7 @@ article h3{
 }
 
 /*blocs contenant les images*/
-.toOpen{
-	display: none;
-}
+
 
 .active-container {
 	background-color: gray;
