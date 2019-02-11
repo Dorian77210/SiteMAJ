@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	var texts = ['Etudiant en deuxième année de DUT informatique en alternance à l\'INSEAD',
+	var texts = ["Etudiant en deuxième année de DUT informatique en alternance à l'INSEAD",
 				 'Site professionnel', 
 				 'Dorian Terbah', 
 				 'Tous droits réservés',
