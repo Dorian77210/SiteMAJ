@@ -79,6 +79,10 @@ article h3{
 	color: blue;
 }
 
+.toOpen {
+	display: none;
+}
+
 /*blocs contenant les images*/
 
 
